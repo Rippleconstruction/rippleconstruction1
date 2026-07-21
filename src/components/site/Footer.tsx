@@ -38,8 +38,8 @@ export function Footer() {
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-white/50 mb-4">Contact</div>
           <ul className="space-y-3 text-sm">
-            <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-[var(--timber)]" /> 0400 000 000</li>
-            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-[var(--timber)]" /> info@rippleconstruction.com.au</li>
+            <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 text-[var(--timber)]" /> 0436802414</li>
+            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 text-[var(--timber)]" /> Michael@rippleconstruction.com.au</li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-[var(--timber)]" /> Brisbane · Moreton Bay · Sunshine Coast</li>
           </ul>
         </div>
@@ -47,7 +47,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
           <div>© {new Date().getFullYear()} Ripple Construction Pty Ltd. All rights reserved.</div>
-          <div>ABN 00 000 000 000 · Fully Insured</div>
+          <div>ABN 41 682 614 517 · Fully Insured</div>
         </div>
       </div>
     </footer>
