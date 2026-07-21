@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, HardHat, Handshake, MessagesSquare, Shield } from "lucide-react";
-import about from "@/assets/about.jpg";
-import framing from "@/assets/framing.jpg";
+import about from "@/Frame.jpg";
+import framing from "@/Shed.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/about")({
