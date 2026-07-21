@@ -59,11 +59,11 @@ export function Header() {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="tel:+61400000000"
+            href="tel:+61436802414"
             className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-foreground"
           >
             <Phone className="h-4 w-4" />
-            0400 000 000
+            0436802414
           </a>
           <Link to="/contact" className="btn-timber text-sm py-2.5 px-4">
             Request a Quote
