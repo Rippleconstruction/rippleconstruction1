@@ -32,7 +32,8 @@ function Contact() {
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     const data = Object.fromEntries(fd) as Record<string, string>;
     const parsed = schema.safeParse(data);
     if (!parsed.success) {
@@ -45,9 +46,30 @@ function Contact() {
       return;
     }
     setErrors({});
-    setSent(true);
+
+try {
+    const response = await fetch ("/api/contact",  {
+      method: "POST",
+      headers: {
+        "content-Type": "application/json",
+      },
+      body: JSON.stringify(parsed.data),
+    });
+  if  (!response.ok) {
+    throw new Error("Failed to send enquiry");
   }
 
+  setSent (true);
+  form.reset();
+} catch (error) {
+  console.error(Contact form error:", error);
+
+  alert(
+    Sorry, your enquiry could not be sent. Please call us on 0436802414."
+  );
+}
+  }
+  
   return (
     <>
       <section className="pt-32 md:pt-40 pb-12 bg-secondary/40">
